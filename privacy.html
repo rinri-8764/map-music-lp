@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>プライバシーポリシー｜Map'n Music</title>
+<meta name="description" content="Map'n Music（マップンミュージック）のプライバシーポリシー。位置情報・写真・入力テキスト・ニックネームの取り扱いについて説明します。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #1f2a37; --ink-soft: #55627a; --bg: #f6f8fb; --card: #ffffff;
+    --line: #e5e9f0; --brand: #208aef; --navy-1: #14243b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Noto Sans JP", system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    line-height: 1.85; -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--brand); }
+  .wrap { width: min(820px, 92%); margin-inline: auto; }
+
+  header.site {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand .mark {
+    width: 32px; height: 32px; border-radius: 10px; flex: none;
+    background: linear-gradient(135deg, #208aef, #16a394);
+    display: grid; place-items: center; color: #fff;
+  }
+  .brand .name { font-family: "Pacifico", cursive; font-size: 20px; color: var(--ink); }
+  .nav-links { display: flex; gap: 18px; font-size: 14px; }
+  .nav-links a { color: var(--ink-soft); text-decoration: none; }
+  .nav-links a:hover { color: var(--brand); }
+
+  .doc {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: clamp(24px, 5vw, 48px); margin: 32px 0 40px;
+    box-shadow: 0 10px 30px rgba(20,36,59,.08);
+  }
+  .doc h1 { font-size: clamp(24px, 5vw, 32px); margin: 0 0 6px; }
+  .meta { color: var(--ink-soft); font-size: 13px; margin: 0 0 8px; }
+  .intro { color: var(--ink-soft); }
+  .doc h2 {
+    font-size: 18px; margin: 34px 0 10px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  .doc h2:first-of-type { border-top: none; padding-top: 0; }
+  .doc h3 { font-size: 15px; margin: 18px 0 4px; }
+  .doc p, .doc li { font-size: 15px; color: #33405a; }
+  .doc ul { padding-left: 1.2em; }
+  .doc li { margin-bottom: 6px; }
+  .note {
+    background: #fff8ec; border: 1px solid #f2e2c2; border-radius: 12px;
+    padding: 14px 16px; font-size: 13px; color: #7a5a1e; margin: 22px 0 0;
+  }
+  .contact-box {
+    background: #eef4fb; border: 1px solid #d7e6f7; border-radius: 12px;
+    padding: 16px 18px; margin-top: 8px;
+  }
+  code { background: #eef1f6; padding: 2px 6px; border-radius: 6px; font-size: 13px; }
+
+  footer.site { background: var(--navy-1); color: #c4d3ea; padding: 34px 0 28px; }
+  footer .fnav { display: flex; gap: 20px; flex-wrap: wrap; }
+  footer .fnav a { color: #c4d3ea; text-decoration: none; font-size: 14px; }
+  footer .fnav a:hover { color: #fff; }
+  footer .copy { margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); font-size: 12px; color: #8ea4c4; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="mark" aria-hidden="true">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-5.6-6.5-10A6.5 6.5 0 0 1 18.5 11c0 4.4-6.5 10-6.5 10Z" fill="#fff"/><circle cx="12" cy="10.5" r="2.4" fill="#208aef"/></svg>
+      </span>
+      <span class="name">Map'n Music</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">ホーム</a>
+      <a href="privacy.html">プライバシー</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <article class="doc">
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">制定日：2026年7月15日／最終更新日：2026年7月15日</p>
+    <p class="intro">Map'n Music（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報および利用情報を適切に取り扱います。本ポリシーは、本アプリが取得する情報とその取り扱いについて説明するものです。</p>
+
+    <h2>1. 取得する情報</h2>
+    <p>本アプリは、機能の提供のために以下の情報を取得・利用することがあります。</p>
+    <ul>
+      <li><strong>位置情報</strong>：思い出を登録する地点の座標、および地図を現在地に表示するための現在地情報。</li>
+      <li><strong>写真</strong>：ユーザーが思い出に添付するために、端末のフォトライブラリから自ら選択した画像。</li>
+      <li><strong>ユーザーが入力したテキスト</strong>：曲名・アーティスト名、エピソード、場所名、思い出の年など、ユーザーが記録のために入力した内容。</li>
+      <li><strong>ニックネーム</strong>：ユーザーが任意で設定する表示名。</li>
+    </ul>
+
+    <h2>2. データの保存場所</h2>
+    <p>上記の情報は、原則として<strong>ユーザーの端末内（ローカルストレージ）</strong>に保存されます。本アプリは現状、これらのデータを外部サーバーへ送信・保存することはありません。そのため、端末の紛失・故障やアプリの削除により、保存したデータが失われる場合があります。</p>
+
+    <h2>3. 第三者が提供するサービス</h2>
+    <p>本アプリは、機能の提供のために以下の外部サービスを利用します。これらのサービスの利用にあたっては、各サービスの検索語・表示位置などの必要な情報が各提供者へ送信されることがあります。</p>
+    <ul>
+      <li><strong>地図表示</strong>：Apple マップ（Apple Inc.）を利用します。</li>
+      <li><strong>地名・住所・駅名などの検索</strong>：OpenStreetMap の Nominatim を利用します。検索した文字列が同サービスへ送信されます。</li>
+      <li><strong>曲の検索</strong>：iTunes Search API（Apple Inc.）を利用します。検索した文字列が同サービスへ送信されます。</li>
+      <li><strong>音楽サービスへのリンク遷移</strong>：保存した曲を開く際、Apple Music や Spotify のページへ遷移します。遷移後は各サービスのプライバシーポリシーが適用されます。</li>
+    </ul>
+    <p>これらの第三者サービスの取り扱いについては、各社のプライバシーポリシーをご確認ください。</p>
+
+    <h2>4. 位置情報の利用目的と、許可しない場合の影響</h2>
+    <p>位置情報は、(1) 思い出を登録する地点を地図から選ぶため、(2) 地図を現在地に表示するために利用します。位置情報の利用を許可しない場合でも本アプリは利用できますが、現在地への地図移動や現在地を基準とした操作が利用できないなど、一部の機能が制限されます。位置情報の許可は、端末の設定からいつでも変更できます。</p>
+
+    <h2>5. 写真へのアクセス目的</h2>
+    <p>フォトライブラリへのアクセスは、ユーザーが思い出に添付する写真を選択するためにのみ使用します。アクセスを許可しない場合、写真の添付機能は利用できませんが、その他の機能は利用できます。選択された写真のみが本アプリで扱われ、それ以外の写真が読み取られることはありません。</p>
+
+    <h2>6. 情報の第三者提供</h2>
+    <p>本アプリは、法令に基づく場合を除き、ユーザーの同意なく個人情報を第三者に販売・提供することはありません。</p>
+
+    <h2>7. お子様のプライバシー</h2>
+    <p>本アプリは、特定の年齢層の個人情報を意図的に収集するものではありません。保護者の方は、お子様の利用にご留意ください。</p>
+
+    <h2>8. 本ポリシーの変更</h2>
+    <p>本ポリシーは、法令の変更や機能の追加（公開機能など）に伴い改定されることがあります。重要な変更がある場合は、本ページ上で告知します。</p>
+
+    <h2>9. お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせは、以下の連絡先までご連絡ください。</p>
+    <div class="contact-box">
+      メール：<code>your-email@example.com</code><br />
+      <span style="font-size:13px;color:#55627a;">※上記は仮のアドレスです。正式なお問い合わせ先は、公開時に差し替えます。</span>
+    </div>
+
+    <p class="note">本ページに記載のプライバシーポリシーは、位置情報・写真を扱うアプリの一般的な雛形であり、正式な法的文書ではありません。実際の公開・配布にあたっては、内容が適切かどうか専門家（弁護士等）の確認を受けることをおすすめします。</p>
+  </article>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <nav class="fnav">
+      <a href="index.html">ホーム</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+    <div class="copy">© 2026 Map'n Music. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
