@@ -56,9 +56,14 @@
     display: grid; place-items: center; color: #fff; flex: none;
     box-shadow: 0 4px 12px rgba(32,138,239,.35);
   }
-  .brand .name { font-family: "Pacifico", cursive; font-size: 22px; color: var(--ink); }
-  .nav-links { display: flex; gap: 20px; font-size: 14px; }
-  .nav-links a { color: var(--ink-soft); text-decoration: none; }
+  .brand { flex: none; }
+  .brand .name {
+    font-family: "Pacifico", cursive;
+    font-size: clamp(18px, 5.2vw, 22px);
+    color: var(--ink); white-space: nowrap;
+  }
+  .nav-links { display: flex; gap: 20px; font-size: 14px; flex-wrap: wrap; }
+  .nav-links a { color: var(--ink-soft); text-decoration: none; white-space: nowrap; }
   .nav-links a:hover { color: var(--brand); }
 
   /* ---------- Hero ---------- */
@@ -164,6 +169,15 @@
   @media (max-width: 820px) {
     .flow, .features { grid-template-columns: 1fr; }
     .nav-links { gap: 14px; }
+  }
+  /* スマホ幅：ヘッダーを縦2段（ロゴ／ナビ）にし、ナビは項目単位で中央折り返し */
+  @media (max-width: 560px) {
+    .nav { flex-direction: column; gap: 8px; padding: 10px 0; }
+    .nav-links {
+      justify-content: center;
+      column-gap: 16px; row-gap: 6px;
+      font-size: 13px;
+    }
   }
 </style>
 </head>
